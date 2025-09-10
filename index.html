@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>МЧИ — Московский чемоданостроительный институт</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: #1e293b;
+      background: linear-gradient(to bottom, #f0f9ff, #ffffff);
+      scroll-behavior: smooth;
+    }
+    a { text-decoration: none; color: inherit; }
+    header {
+      position: sticky;
+      top: 0; z-index: 100;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #e2e8f0;
+    }
+    header .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      margin: 0 10px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    nav a:hover { color: #1d4ed8; }
+    .btn {
+      background: #1d4ed8;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .btn:hover { background: #1e40af; }
+    .section {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section h2 {
+      text-align: center;
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .section p.sub {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 40px;
+      color: #475569;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+      padding-top: 60px;
+    }
+    .hero h1 {
+      font-size: 40px;
+      font-weight: 900;
+      margin: 16px 0;
+    }
+    .hero p { color: #475569; }
+    .stats {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .stat {
+      flex: 1;
+      text-align: center;
+      background: rgba(255,255,255,0.7);
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 20px;
+      font-weight: bold;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .card h3 {
+      margin-top: 0;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .faq details {
+      border-bottom: 1px solid #e2e8f0;
+      padding: 12px 0;
+    }
+    .faq summary {
+      cursor: pointer;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+    }
+    footer {
+      background: white;
+      border-top: 1px solid #e2e8f0;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #64748b;
+    }
+    /* адаптив */
+    @media(max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      nav { display: none; } /* упрощаем */
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div><strong>МЧИ</strong><br><small>Московский чемоданостроительный институт</small></div>
+    <nav>
+      <a href="#kafedra">Кафедра</a>
+      <a href="#programs">Программы</a>
+      <a href="#admissions">Поступление</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a href="#admissions" class="btn">Подать заявку</a>
+  </div>
+</header>
+
+<section class="section hero" id="top">
+  <div>
+    <span style="background:#eff6ff; padding:4px 10px; border-radius:20px; font-size:12px; color:#1d4ed8;">Инженерия движения</span>
+    <h1>МЧИ к мечте с чемоданом!</h1>
+    <p>Объединяем науку о материалах, эргономику и транспортные технологии, чтобы создавать умные, прочные и красивые чемоданы — от ручной клади до экспедиционных систем.</p>
+    <div class="stats">
+      <div class="stat">69<br><small>Лет развития</small></div>
+      <div class="stat">8<br><small>Лабораторий</small></div>
+      <div class="stat">&gt;98%<br><small>Трудоустройство</small></div>
+    </div>
+  </div>
+  <div class="card">
+    <h3>Кафедра «Чемоданостроение»</h3>
+    <ul>
+      <li>Индустриальный дизайн и конструирование багажа</li>
+      <li>Композиты, фурнитура, телескопические системы</li>
+      <li>IoT-трекинг и смарт-замки</li>
+      <li>Тесты на удар, климат и пробег</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="kafedra">
+  <h2>Чемоданостроение — инженерия движения</h2>
+  <p class="sub">Мы обучаем от идеи и дизайна до производства и испытаний, сотрудничая с авиакомпаниями, ритейлом и индустрией путешествий.</p>
+  <div class="cards">
+    <div class="card"><h3>Учебные треки</h3>Бакалавриат, магистратура и доп.образование.</div>
+    <div class="card"><h3>Лабы и оборудование</h3>Стенд катания, климат-камера, 3D-принтеры.</div>
+    <div class="card"><h3>Партнёры</h3>Производители багажа, маркетплейсы, аэропорты.</div>
+  </div>
+</section>
+
+<section class="section" id="programs" style="background:#f8fafc;">
+  <h2>Программы</h2>
+  <p class="sub">Современные учебные планы с упором на практику.</p>
+  <div class="cards">
+    <div class="card"><h3>Конструирование багажа</h3><p>Бакалавриат • 4 года</p></div>
+    <div class="card"><h3>Смарт-чемоданы и IoT</h3><p>Магистратура • 2 года</p></div>
+    <div class="card"><h3>Дизайн чемоданов</h3><p>Доп. образование • 3–6 мес</p></div>
+  </div>
+</section>
+
+<section class="section" id="admissions">
+  <h2>Как стать студентом МЧИ</h2>
+  <div class="cards">
+    <div class="card"><ol>
+      <li>Подача заявки и портфолио</li>
+      <li>Вступительные испытания</li>
+      <li>Собеседование</li>
+      <li>Зачисление</li>
+    </ol></div>
+    <div class="card"><h3>Заявка</h3><form>
+      <input placeholder="Имя" style="display:block;width:100%;margin:8px 0;padding:8px;border:1px solid #ccc;border-radius:8px;">
+      <input placeholder="Фамилия" style="display:block;width:100%;margin:8px 0;padding:8px;border:1px solid #ccc;border-radius:8px;">
+      <input type="email" placeholder="Email" style="display:block;width:100%;margin:8px 0;padding:8px;border:1px solid #ccc;border-radius:8px;">
+      <textarea placeholder="Сообщение" style="display:block;width:100%;margin:8px 0;padding:8px;border:1px solid #ccc;border-radius:8px;height:80px;"></textarea>
+      <button class="btn" type="button">Отправить</button>
+    </form></div>
+  </div>
+</section>
+
+<section class="section faq">
+  <h2>FAQ</h2>
+  <details><summary>Можно ли совмещать учёбу и стажировку?</summary><p>Да, есть гибкий график.</p></details>
+  <details><summary>Нужны ли навыки 3D-моделирования?</summary><p>Желательны, но есть подготовительный модуль.</p></details>
+  <details><summary>Есть ли военная кафедра?</summary><p>Да, по конкурсу.</p></details>
+</section>
+
+<section class="section" id="contacts">
+  <h2>Контакты</h2>
+  <div class="cards">
+    <div class="card"><h3>Приёмная комиссия</h3>priem@mchi.example<br>+7 (495) 000-00-00</div>
+    <div class="card"><h3>Кафедра Чемоданостроение</h3>Москва, пр-т Инженерный, 15</div>
+    <div class="card"><h3>Партнёрства</h3>partners@mchi.example</div>
+  </div>
+</section>
+
+<footer>
+  © 2025 МЧИ — Московский чемоданостроительный институт<br>
+  Лозунг: «МЧИ к мечте с чемоданом!»
+</footer>
+
+</body>
+</html>
