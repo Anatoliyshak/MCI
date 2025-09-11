@@ -28,6 +28,15 @@
       justify-content: space-between;
       align-items: center;
     }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: bold;
+    }
+    .logo img {
+      height: 50px;
+    }
     nav a {
       margin: 0 10px;
       font-size: 14px;
@@ -133,7 +142,13 @@
 
 <header>
   <div class="container">
-    <div><strong>МЧИ</strong><br><small>Московский чемоданостроительный институт</small></div>
+    <div class="logo">
+      <img src="logo.png" alt="Логотип МЧИ">
+      <div>
+        <strong>МЧИ</strong><br>
+        <small>Московский чемоданостроительный институт</small>
+      </div>
+    </div>
     <nav>
       <a href="#kafedra">Кафедра</a>
       <a href="#programs">Программы</a>
@@ -189,21 +204,26 @@
 <section class="section" id="admissions">
   <h2>Как стать студентом МЧИ</h2>
   <div class="cards">
-    <div class="card"><ol>
-      <li>Подача заявки и портфолио</li>
-      <li>Вступительные испытания</li>
-      <li>Собеседование</li>
-      <li>Зачисление</li>
-    </ol></div>
-    <div class="card"><h3>Заявка</h3><form>
-      <input placeholder="Имя" style="display:block;width:100%;margin:8px 0;padding:8px;border:1px solid #ccc;border-radius:8px;">
-      <input placeholder="Фамилия" style="display:block;width:100%;margin:8px 0;padding:8px;border:1px solid #ccc;border-radius:8px;">
-      <input type="email" placeholder="Email" style="display:block;width:100%;margin:8px 0;padding:8px;border:1px solid #ccc;border-radius:8px;">
-      <textarea placeholder="Сообщение" style="display:block;width:100%;margin:8px 0;padding:8px;border:1px solid #ccc;border-radius:8px;height:80px;"></textarea>
-      <button class="btn" type="button">Отправить</button>
-    </form></div>
+    <div class="card">
+      <ol>
+        <li>Подача заявки и портфолио</li>
+        <li>Вступительные испытания</li>
+        <li>Собеседование</li>
+        <li>Зачисление</li>
+      </ol>
+    </div>
+    <div class="card" style="text-align:center; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+      <h3 style="margin-bottom:10px;">Вопросы по поступлению</h3>
+      <p style="margin:0; font-size:16px; color:#475569;">
+        Обсуждаются лично с ректором
+      </p>
+      <p style="margin:5px 0; font-weight:700; font-size:18px; color:#1d4ed8;">
+        📞 +7 (916) 078-85-81
+      </p>
+    </div>
   </div>
 </section>
+
 
 <section class="section faq">
   <h2>FAQ</h2>
